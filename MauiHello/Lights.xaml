@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiHello.Lights"
+             Title="Lights">
+    <VerticalStackLayout>
+        
+        <Label x:Name ="olohuone_valaistus"
+           Text="{Binding Source={x:Reference olohuone_slider},
+                             Path=Value, StringFormat='Olohuone: {0:N0}' }" FontSize="40"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Slider x:Name="olohuone_slider" />
+
+        <Switch Toggled="Switch_Toggled" Margin="30, 30, 30, 30" />
+
+
+    </VerticalStackLayout>
+</ContentPage>
