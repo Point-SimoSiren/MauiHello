@@ -8,17 +8,22 @@ public partial class LaskinPage : ContentPage
 	public LaskinPage()
 	{
 		InitializeComponent();
-        display_field.Text = "";
+        
 	}
 
 
+    // Tätä metodia kutsutaan silloin kun switch-case käsittelyssä havaitaan, että
+    // on painettu "=" -merkkiä.
     private void LaskeTulos()
     {
         try
         {
             string kaava = display_field.Text;
+
+            // Lasketaan tulos kaavasta
             var table = new DataTable();
             var result = table.Compute(kaava, string.Empty);
+
             display_field.Text = result.ToString();
         }
         catch {

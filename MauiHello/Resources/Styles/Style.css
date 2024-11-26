@@ -1,4 +1,36 @@
 ﻿
-.button {
-    font-size: 24;
+.display {
+    font-size: 36;
+    padding: 10;
+    background-color: ghostwhite;
+    color: black;
+}
+
+
+.number_button {
+    font-size: 36;
+    background-color: slateblue;
+    color: ghostwhite;
+    border-color: ghostwhite;
+}
+
+.operator_button {
+    font-size: 36;
+    background-color: darkgoldenrod;
+    color: ghostwhite;
+    border-color: ghostwhite;
+}
+
+.c_button {
+    font-size: 36;
+    background-color: orangered;
+    color: ghostwhite;
+    border-color: ghostwhite;
+}
+
+.equals_button {
+    font-size: 36;
+    background-color: forestgreen;
+    color: azure;
+    border-color: ghostwhite;
 }
